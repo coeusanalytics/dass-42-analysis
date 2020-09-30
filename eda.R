@@ -114,14 +114,14 @@ dep_tipi_p <- ggpubr::ggboxplot(data = dep_tipi_data,
     theme_bw() +
     theme(legend.position = "none") +
     stat_compare_means(label = "p.signif", label.y = 70, method = "t.test", ref.group = 1) +
-    stat_compare_means(label.y = 80, label.x = 1, method = "kruskal")  +
+    stat_compare_means(label.y = 80, label.x = 2, method = "kruskal")  +
     facet_wrap( ~ measure_name, ncol = 3) +
     labs(caption = "Source: DASS-42 Raw Data, Open Psychometrics
     Analysis: Hung Vo, An Evaluator Analytics
          
          1=Disagree strongly and 7=Agree strongly
-         T-test comparisons are made against 1=Disagree stronglyns: p > 0.05
-         *: p <= 0.05; **: p <= 0.01; ***: p <= 0.001; ****: p <= 0.0001")
+         T-test comparisons are made against 1=Disagree strongly
+         ns: p > 0.05; *: p <= 0.05; **: p <= 0.01; ***: p <= 0.001; ****: p <= 0.0001")
 dep_tipi_p
 
 # ================= EDA: ANXIETY ACROSS PERSONALITY =================
@@ -170,14 +170,14 @@ anx_tipi_p <- ggpubr::ggboxplot(data = anx_tipi_data,
     theme_bw() +
     theme(legend.position = "none") +
     stat_compare_means(label = "p.signif", label.y = 70, method = "t.test", ref.group = 1) +
-    stat_compare_means(label.y = 80, label.x = 1, method = "kruskal")  +
+    stat_compare_means(label.y = 80, label.x = 2, method = "kruskal")  +
     facet_wrap( ~ measure_name, ncol = 3) +
     labs(caption = "Source: DASS-42 Raw Data, Open Psychometrics
     Analysis: Hung Vo, An Evaluator Analytics
          
          1=Disagree strongly and 7=Agree strongly
-         T-test comparisons are made against 1=Disagree stronglyns: p > 0.05
-         *: p <= 0.05; **: p <= 0.01; ***: p <= 0.001; ****: p <= 0.0001")
+         T-test comparisons are made against 1=Disagree strongly
+         ns: p > 0.05; *: p <= 0.05; **: p <= 0.01; ***: p <= 0.001; ****: p <= 0.0001")
 anx_tipi_p
 
 # ================= EXPORT IMAGES =================
