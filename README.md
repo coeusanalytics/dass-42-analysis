@@ -15,7 +15,6 @@ This analysis is intended to explore the Depression Anxiety Stress Scale (DASS-4
 ```
 # run import script
 source("data-import.R")
-
 ```
 
 ## Disclaimer
